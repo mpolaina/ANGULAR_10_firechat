@@ -1,1 +1,80 @@
-/* You can add global styles to this file, and also import other style files */
+.main-container{
+  margin-top: 16px;
+  margin-bottom: 0px;
+}
+
+.puntero{
+  cursor: pointer;
+}
+
+body {
+  /* background-color: black; */
+}
+
+
+.chat-window{
+  background-color: white;
+  padding: 10px;
+  width: 98%;
+  max-width: 600px;
+  height: 90vh;
+  margin: 0 auto;
+  /* overflow: hidden; */
+  border: 1px solid #4080FF;
+  border-radius: 10px;
+}
+
+.app-mensajes{
+  overflow-y:scroll;
+  height:72vh;
+  /*background:gray;*/
+  padding: 5px 16px;
+}
+
+.caja-mensaje {
+  margin-top: 0px;
+  /* border-radius: 30px; */
+  border-radius: 0;
+  border-bottom: 4px solid black;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: #ffcc00;
+  background-color: #f4f4f4;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+
+/* Animaciones */
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.fast {
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+}

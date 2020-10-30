@@ -13,6 +13,11 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "allowedCommonJsDependencies": [
+              "firebase",
+              "@angular/fire/firestore",
+              "@firebase/auth"
+            ],
             "outputPath": "dist/firechat",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -117,8 +122,13 @@
               "devServerTarget": "firechat:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "firechat"
 }
